@@ -70,7 +70,7 @@ def webhook():
     servidor_web = '/var/www/dsonlineli_pythonanywhere_com_wsgi.py' 
 
     # Comprueba si la solicitud POST contiene datos JSON
-    if request.is_json:
+    if True: #request.is_json:
         payload = request.json
         # Verifica si la carga útil (payload) contiene información sobre el repositorio
         if 'repository' in payload:
