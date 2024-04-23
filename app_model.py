@@ -34,7 +34,7 @@ def predict(): # Ligado al endpoint '/api/v1/predict', con el método GET
     print(type(tv))
 
     if tv is None or radio is None or newspaper is None:
-        return "Args empty, the data are not enough to predict, STUPID!!!!"
+        return "Args empty, the data are not enough to predict, SO STUPID!!!!"
     else:
         prediction = model.predict([[float(tv),float(radio),float(newspaper)]])
     
